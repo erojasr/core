@@ -26,3 +26,7 @@ $app->get('/categories/{categories}', 'CategoriesController@getCategories');
 $app->post('/categories/add', 'CategoriesController@createNewCategory');
 
 $app->put('/categories/edit/{id}', 'CategoriesController@updateCategory');
+
+// meetups
+$app->get('/meetups', 'MeetupsController@index');
+$app->post('/meetups/add', 'MeetupsController@createNewMeetup');
